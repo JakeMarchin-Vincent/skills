@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <mask id="margin-mask">
+      <rect x="0" y="0" width="80" height="80" fill="white" />
+      <rect x="20" y="12" width="3" height="56" fill="black" />
+    </mask>
+  </defs>
+  <rect x="8" y="4" width="56" height="72" rx="4" fill="#1a2433" mask="url(#margin-mask)" />
+</svg>

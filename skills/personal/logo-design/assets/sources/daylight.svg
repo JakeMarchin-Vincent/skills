@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <!-- Rounded square with a crescent-moon bite taken out of the top-left.
+       Implies sunrise / the edge of daylight emerging from night. -->
+  <path d="M68 20
+           L380 20
+           Q400 20 400 68
+           L400 332
+           Q400 380 332 380
+           L68 380
+           Q20 380 20 332
+           L20 180
+           A160 160 0 0 0 180 20
+           Z"
+        fill="#0ea5e9" />
+</svg>

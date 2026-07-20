@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Logo options — {PROJECT_NAME}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --fg: #1a2433;
+      --muted: #6b7280;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+      --primary: #0ea5e9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --card-bg: #1e293b;
+        --border: #334155;
+        --primary: #38bdf8;
+      }
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+    header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 24px 24px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 6px;
+    }
+    header p {
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: var(--primary);
+    }
+    .card .num {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .card .art {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      border-radius: 8px;
+    }
+    .card .art svg {
+      width: 60%;
+      height: 60%;
+    }
+    .card .name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--fg);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .card .name svg {
+      height: 22px;
+      width: auto;
+    }
+    .card .caption {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Logo options — {PROJECT_NAME}</h1>
+    <p>Pick a number and tell Claude which to ship.</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- ============ OPTION CARD TEMPLATE — duplicate & edit for each option ============ -->
+    <div class="card">
+      <div class="num">Option 1</div>
+      <div class="art">
+        <!-- paste the SVG mark here -->
+        <svg viewBox="0 0 64 64" fill="none">
+          <rect x="8" y="8" width="48" height="48" rx="8" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="name">
+        <!-- repeat the mark in-line at small size -->
+        <svg viewBox="0 0 64 64" fill="none">
+          <rect x="8" y="8" width="48" height="48" rx="8" fill="currentColor" />
+        </svg>
+        {PROJECT_NAME}
+      </div>
+      <div class="caption">One sentence describing what this concept represents.</div>
+    </div>
+    <!-- ============ end option card ============ -->
+
+  </div>
+</body>
+</html>

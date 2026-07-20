@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 33" fill="none" role="img" aria-label="Sift">
+  <!-- Three stacked bars, each shorter than the last and centered.
+       Evokes the funneling / narrowing action of sifting. -->
+  <rect x="0"  y="0"  width="48" height="7" rx="2" fill="#0ea5e9" />
+  <rect x="8"  y="13" width="32" height="7" rx="2" fill="#0ea5e9" />
+  <rect x="16" y="26" width="16" height="7" rx="2" fill="#0ea5e9" />
+</svg>

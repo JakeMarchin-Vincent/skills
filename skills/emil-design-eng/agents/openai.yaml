@@ -1,0 +1,8 @@
+version: 1
+kind: skill
+metadata:
+  display_name: "Emil Design Eng"
+  short_description: "High-craft UI polish and motion restraint"
+  default_prompt: "Use $emil-design-eng to review UI/UX craft, motion, hierarchy, and polish with restrained high-end taste."
+policy:
+  allow_implicit_invocation: true
