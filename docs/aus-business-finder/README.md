@@ -22,7 +22,7 @@ Install it in Hermes:
 hermes skills install JakeMarchin-Vincent/skills/aus-business-finder-mv
 ```
 
-The original standalone package was installed in a clean, isolated Hermes home on 8 October 2026; that result does not by itself test this consolidated path. A fresh live model run *inside that credential-free isolated home* has not been performed; identical core instructions were exercised in MEWY's profile. Hermes needs web search and at least one working page opener (`web_extract` or `browser_navigate`); source access varies by session. The skill has no account, API-key or business-database dependency of its own.
+The original standalone 0.3.0 package installed in a clean, isolated Hermes home on 8 October 2026. The 0.4.0 candidate bundle in this consolidated repo was separately installed from a pinned commit into an isolated home on 9 October: its safety scan allowed it and the installed skill, claim-checking reference and MIT notice matched the commit byte-for-byte. MEWY also exercised the installed candidate in live, bounded lookups; see the [0.4.0 evaluation](EVALUATION-0.4.0.md) for results and limits. A live model run *inside that credential-free isolated home* has not been performed. Hermes needs web search and at least one working page opener (`web_extract` or `browser_navigate`); source access varies by session. The skill has no account, API-key or business-database dependency of its own.
 
 ## Reading the results
 
