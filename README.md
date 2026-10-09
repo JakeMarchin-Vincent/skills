@@ -26,7 +26,7 @@ The former nested path `skills/outreach/dusk-outreach-sequencing` contained an u
 
 ## Australian Business Finder
 
-Its [MIT notice](skills/aus-business-finder-mv/references/LICENSE.md) covers that package. The [0.4.0 development evaluation](docs/aus-business-finder/EVALUATION-0.4.0.md) and [earlier eight-case evaluation](docs/aus-business-finder/EVALUATION.md) report both sourced candidates and misses. This is a source-linked discovery aid, not a verified directory or a demonstrated improvement over ordinary research.
+Its [MIT notice](skills/aus-business-finder-mv/references/LICENSE.md) covers that package. Invoke `/aus-business-finder-mv` in a new Hermes session for predictable use; natural activation was inconsistent in testing. The [0.4.0 development evaluation](docs/aus-business-finder/EVALUATION-0.4.0.md) and [earlier eight-case evaluation](docs/aus-business-finder/EVALUATION.md) report both sourced candidates and misses. This is a source-linked discovery aid, not a verified directory or a demonstrated improvement over ordinary research.
 
 ## Legacy operations document
 
