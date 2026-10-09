@@ -1,5 +1,7 @@
 # Evidence and limits — Australian Business Finder 0.3.0
 
+This is the historical 0.3.0 evidence record. The [0.4.0 development evaluation](EVALUATION-0.4.0.md) describes the later candidate and its remaining misses; it does not rewrite the earlier failures.
+
 **Status:** Public beta source and clean installation verified; this is a **sourced-candidates Finder**, not a business verification service. The original standalone public GitHub package installed into a credential-free isolated Hermes home, passed its community safety scan and matched the published `SKILL.md` byte-for-byte. That isolated home did not run a live model lookup. An independently selected Toowoomba commercial-kitchen exhaust-cleaning case (`C03`) in the MEWY profile returned one candidate rather than padding to three; its cited first-party URL had been opened by the run and independently reopened, supported the advertised service area, and the answer did not assert independent verification or Toowoomba premises. The run exited zero. These are bounded observations, not national coverage or a general accuracy statistic.
 
 ## What happened in testing
