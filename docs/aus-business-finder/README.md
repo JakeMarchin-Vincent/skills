@@ -1,6 +1,6 @@
 # Australian Business Finder
 
-**Public beta:** source and installation are available. This is a sourced-candidates Finder, not independent business verification.
+**Public beta:** source and installation are available. This is a sourced-candidates Finder, not independent business verification. Version 0.4.0 adds a decisive-claim check and bounded source recovery; see its [development evaluation](EVALUATION-0.4.0.md), including misses and limitations. The [0.3.0 evaluation](EVALUATION.md) remains available as the historical baseline.
 
 A small agent skill that finds **Australian business candidates** by type and place and links to the businesses' own public pages. It tells you what each site says about its services, address or service area. It **does not independently verify** that a business trades, occupies an address, has stock or is available. It never contacts a business or builds a database.
 
@@ -22,7 +22,9 @@ Install it in Hermes:
 hermes skills install JakeMarchin-Vincent/skills/aus-business-finder-mv
 ```
 
-The original standalone package was installed in a clean, isolated Hermes home on 8 October 2026; that result does not by itself test this consolidated path. A fresh live model run *inside that credential-free isolated home* has not been performed; identical core instructions were exercised in MEWY's profile. Hermes needs web search and at least one working page opener (`web_extract` or `browser_navigate`); source access varies by session. The skill has no account, API-key or business-database dependency of its own.
+The original standalone 0.3.0 package installed in a clean, isolated Hermes home on 8 October 2026. The 0.4.0 candidate bundle in this consolidated repo was separately installed from a pinned commit into an isolated home on 9 October: its safety scan allowed it and the installed skill, claim-checking reference and MIT notice matched the commit byte-for-byte. MEWY also exercised the installed candidate in live, bounded lookups; see the [0.4.0 evaluation](EVALUATION-0.4.0.md) for results and limits. A live model run *inside that credential-free isolated home* has not been performed. Hermes needs web search and at least one working page opener (`web_extract` or `browser_navigate`); source access varies by session. The skill has no account, API-key or business-database dependency of its own.
+
+For predictable use, **invoke the installed skill explicitly** in a new Hermes session: `/aus-business-finder-mv Find two ...` or `hermes -s aus-business-finder-mv chat -q 'Find two ...'`. Natural selection of this skill was inconsistent in development tests; a business-finding answer alone does not show that the skill loaded.
 
 ## Reading the results
 
@@ -35,6 +37,6 @@ Search rankings are not recommendations, ratings, stock checks, price checks or 
 
 ## Evidence, authorship and limits
 
-See [the detailed eight-case evaluation](EVALUATION.md) and [release evidence and limitations](EVIDENCE.md). In a small, adversarial paired run, v0.3.0 returned **4** clearly supported candidates versus **8** for the audited ordinary-agent baseline; it also missed page details and copied one contact incorrectly. This is **not evidence of a performance improvement** over a general agent. Earlier versions sometimes overstated a shop or physical location and once cited a broken contact-page URL; that is why this version reports website claims as **candidates**, not independently verified businesses. Its value is a short, inspectable starting point, not a certification service.
+See [the 0.4.0 development evaluation](EVALUATION-0.4.0.md), [the earlier eight-case evaluation](EVALUATION.md) and [release evidence and limitations](EVIDENCE.md). The earlier 0.3.0 skill returned **4** clearly supported candidates versus **8** for the audited ordinary-agent baseline, missed page details and copied one contact incorrectly. The 0.4.0 development cases recovered some of those missed candidates but still missed others, and were not a matched comparison against an ordinary agent. **Neither result establishes a performance improvement over a general agent.** Earlier versions sometimes overstated a shop or physical location and once cited a broken contact-page URL; that is why this version reports website claims as **candidates**, not independently verified businesses. Its value is a short, inspectable starting point, not a certification service.
 
 Dusk authored the Australian discovery workflow with Hermes Agent assistance. Hermes supplies the runtime and web tools; a hosted model makes the research decisions. ABN Lookup can help with a confidently matched legal identity but does not provide a complete sector/contact/service-area feed. Google Maps is not a bulk-data source. Public publishing and portfolio wording remain subject to founder review.
