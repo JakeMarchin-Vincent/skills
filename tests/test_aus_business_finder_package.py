@@ -19,6 +19,12 @@ class AustralianBusinessFinderPackageTest(unittest.TestCase):
         frontmatter, body = parts
         self.assertRegex(frontmatter, r"(?m)^name: aus-business-finder-mv$")
         self.assertRegex(frontmatter, r"(?m)^description: \S.+$")
+        match = re.search(r"(?m)^description: (.+)$", frontmatter)
+        self.assertIsNotNone(match)
+        assert match is not None
+        description = match.group(1)
+        self.assertLessEqual(len(description), 60)
+        self.assertIn("Australian business", description)
         self.assertRegex(frontmatter, r"(?m)^version: \d+\.\d+\.\d+$")
         self.assertTrue(body.strip())
         self.assertNotIn("/home/dusk/", text)

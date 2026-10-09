@@ -1,6 +1,6 @@
 ---
 name: aus-business-finder-mv
-description: Find Australian businesses with source links.
+description: Use for Australian business lookups by type, place or name.
 version: 0.4.0
 author: Dusk, Hermes Agent
 license: MIT
